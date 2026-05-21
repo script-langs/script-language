@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Script Programming Language</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="/script-language/favicon-16x16.png">
+    <title>ScriptLang Programming Language</title>
     
     <!-- CSS Prism theme -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css">
     
     <!-- CSS -->
     <style>
-        /* RESET: Menghilangkan margin bawaan agar bar hitam mentok ke ujung layar */
+        /* RESET */
         * {
             margin: 0;
             padding: 0;
@@ -27,22 +27,22 @@
             background-color: #ffffff;
         }
 
-        /* BAGIAN ATAS PAGE JADI HITAM DAN TOMBOL DI KANAN */
+        /* Top sidebar */
         .topsidebar {
-            background-color: #111111; /* Warna hitam */
-            padding: 15px 30px;        /* Ruang dalam bar hitam */
+            background-color: #111111; 
+            padding: 15px 30px;        /* Paddings */
             display: flex;
-            justify-content: flex-end; /* Memaksa semua elemen di dalamnya (tombol) ke kanan samping */
+            justify-content: flex-end; /* FLEX FLEX END */
             align-items: center;
             width: 100%;
         }
 
-        /* STYLE UNTUK TOMBOL SANDBOX (SMOOTH EDGE) */
+        /* topsidebar button */
         .topsidebar button {
-            background-color: #111111; /* Tombol warna putih agar kontras */
-            color: white;            /* Teks tombol warna hitam */
+            background-color: #111111; 
+            color: white;            
             cursor: pointer;
-            border-radius: 6px;        /* Membuat pinggiran tombol smooth/melengkung */
+            border-radius: 6px;        
             border: none;
             padding: 8px 18px;
             font-weight: bold;
@@ -50,28 +50,38 @@
         }
 
         .topsidebar button:hover {
-            background-color: gray; /* Efek hover sedikit abu-abu saat disentuh mouse */
+            background-color: gray; /* Hover effect */
         }
 
-        /* CONTAINER ISI KONTEN (Agar teks tidak menempel ke pinggir layar) */
+        /* CONTAINER  */
         .content {
             padding: 30px;
+        }
+
+        .icon {
+          width: 30px;
+          height:30px;
+          position: absolute;
+          top: 2%;
+          left: 1%
         }
     </style>
 </head>
 <body>
 
-    <!-- Bagian atas page HITAM -->
+    <!-- Black top sidebar -->
     <div class="topsidebar">
-        <a href="#"> <!-- Nanti ganti # dengan link sandbox kamu -->
+      <a href="index.html"><img src="https://uploads.onecompiler.io/44m4a9853/1779085364250/favicon-16x16.png" class="icon"></a>
+      <p style="color: white; position: absolute; left: 1px; top: 8%; font-size: 10px;">ScriptLangs</p>
+        <a href="#"> <!-- change todo -->
             <button>Sandbox</button>
         </a>
     </div>
 
-    <!-- Semua konten dokumentasi dibungkus di sini agar rapi -->
+    <!-- Every docs content -->
     <div class="content">
-        <h1>Script programming language</h1><img src="favicon-16x16.png">
-        <p>This is script programming language, the program language main objective is to make simple syntax</p>
+        <h1>Script programming language</h1>
+        <p>This is ScriptLang programming language, The main goal of ScriptLangs is to provide a simple and easy-to-read syntax.</p>
         <br><br>
         
         <h1>DOCUMENTATIONS</h1>
@@ -105,7 +115,7 @@
   // your code here
 }</code></pre>
 
-        <p>and call it using <code>call yourfunction()</code>, change <code>yourfunction()</code> to your own function, for exampke:</p>
+        <p>and call it using <code>call yourfunction()</code>, change <code>yourfunction()</code> to your own function, for example:</p>
 
         <pre><code class="language-js">function myFunc {
   console.write("hello from my function")
@@ -122,6 +132,73 @@ call myFunc()</code></pre>
         <br>
 
         <p>but if you want it to stop in the middle or stop it on a specific line, you can use <code>string[stop]</code></p>
+
+        <br>
+
+        <p>another keywords is <code>if</code>, as you know, if is used for some situation like <code>if 1 < 2 then {...}</code>, and in here, it uses brackets, like example:</p>
+
+        <pre><code class="language-cpp">if (1 < 2) then {
+  // your code here, for example:
+  console.write("1 is less than 2")
+}</code></pre>
+        <p><code>if</code> also can be used on functions events, which is if a function actives an event then do code, for example:</p>
+
+        <pre><code class="language-cpp">if (myFunc runned[console.write("hi")]) then {
+  // your code here... for example:
+  console.write("hello again!")
+}</code></pre>
+
+        <h2>Variables</h2>
+
+        <p>variable is used for values and numbers, variables can be used for a string too, to make a variable, use the code <code>var</code> to make a new variables</p>
+
+        <pre><code class="language-js">var myvar = 10</code></pre>
+
+        <p>and use console.write to run it</p>
+
+        <pre><code class="language-cpp">console.write(myvar)</code></pre>
+
+        <p>it will print the number 10</p>
+
+        <br>
+
+        <p>to delete a variable, use the keyword <code>var delete: myvar</code> , change <code>myvar</code> to your variable</p>
+
+        <h2>Loops</h2>
+
+        <p><code>Loops</code> used for a simple loops, loops mean the code inside the loop will run forever, for simple explanation: run the code forever</p>
+
+        <br>
+
+        <p>Loops also can be looped for whatever time you want using <code>loop repeat(3) {...}</code>, for simple example of loop:</p>
+
+        <pre><code class="language-js">loop repeat(3) {
+ // your code here, for example:
+ console.write("hello, world!")
+}</code></pre>
+
+        <p style="color: red;">DONT USE <code>repeat</code> AT YOUR OWN RISK!</p>
+
+        <h2>Data</h2>
+
+        <p>Data is used for a string or used for a list of data's, for simple explanation: Data is used to make a list of data's</p>
+
+        <br>
+
+        <p>Data example:</p>
+        <pre><code class="language-js">data mydata = ["data 1", "data 2"]</code></pre>
+
+        <p>to print a data use <code>console.write(mydata[])</code>, or if you want random use <code>console.write(mydata[random])</code></p>
+
+        <br>
+
+        <p>Theres also data for variables, use:</p>
+
+        <pre><code class="language-js">varData myvar = ["data 1", "data 2"]</code></pre>
+
+        <br><hr>
+
+        <p class="left: 50%; text-align: center;">More docs coming soon!</p>
     </div>
 
     <!-- 2. Main js and prism -->
