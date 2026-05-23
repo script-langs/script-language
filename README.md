@@ -11,3 +11,5 @@ console.write("red text!" style=[text-color: red, outline-size: 5px, outline-col
 ```
 
 read the full documentation here: https://script-langs.github.io/script-language/
+
+or if it doesnt work, here: https://script-langs.github.io/script-language/index.html

@@ -1,6 +1,2 @@
-*.html
-*.js
-*.css
-*.php
 # Ignore all files in the "dist" directory
 dist/*
