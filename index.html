@@ -71,12 +71,13 @@
 
     <!-- Black top sidebar -->
     <div class="topsidebar">
-      <a href="index.html"><img src="https://uploads.onecompiler.io/44m4a9853/1779085364250/favicon-16x16.png" class="icon"></a>
-      <p style="color: white; position: absolute; left: 1px; top: 8%; font-size: 10px;">ScriptLangs</p>
-        <a href="#"> <!-- change todo -->
-            <button>Sandbox (soon)</button>
-        </a>
-    </div>
+    <a href="index.html" style="margin-right: auto;">
+        <img src="https://uploads.onecompiler.io/44m4a9853/1779085364250/favicon-16x16.png" class="icon" style="display: block;">
+    </a>
+    <a href="sandbox.html">
+        <button>Sandbox (soon)</button>
+    </a>
+</div>
 
     <!-- Every docs content -->
     <div class="content">
@@ -196,9 +197,80 @@ call myFunc()</code></pre>
 
         <pre><code class="language-js">varData myvar = ["data 1", "data 2"]</code></pre>
 
+        <h2>Functional keywords/event</h2>
+
+        <p>Welcome again, you have learned about the ui and codes, now lets learn about functional keywords/codes, functional keywords is used for orders or commands, functional keywords is a keywords that used for commands or orders</p>
+
+        <br>
+
+        <p>first, is to make an id for input, use: <code>console.write("name:" + input[id="myinp"])</code>, and lets make it work</p>
+
+        <br>
+
+        <p>to make it answer back, use:</p>
+
+        <pre><code class="language-js">if input.id[myinp] hasInput == any then {
+ console.write("welcome!")
+}</code></pre>
+
+        <p>to make it answer back with the name on, use:</p>
+
+        <pre><code class="language-js">if input.id[myinp] hasInput == any then {
+ console.write("hello " + inputAnswer + "!")            
+}</code></pre>
+
+        <p>you can also delete <code>== any</code>, because why do you need that if you have an input that dont needs a specific answer</p>
+
+        <pre><code class="language-js">if input.id[myinp] hasInput then {
+ console.write("hello " + inputAnswer + "!")            
+}</code></pre>
+
+        <p>next is input answers, if you ever wants your input to be a specific answer, use:</p>
+
+        <pre><code class="language-js">if input.id[myinp] hasInput == "scriptlang is cool!" then {
+ console.write("thanks! (:")            
+}</code></pre>
+
+        <p>and if you want to make the answer is multiple, you can use:</p>
+
+        <pre><code class="language-js">if input.id[myinp] hasInput == ["scriptlang is cool!", "scriptlang is the coolest!", "scriptlang is wowie!!"] then {
+ console.write("thanks! (:")            
+}</code></pre>
+
+        <p>and if you want it use a data for multiple answer, use:</p>
+
+        <pre><code class="language-js">if input.id[myinp] hasInput == mydata[] then {
+ console.write("ok")            
+}</code></pre>
+
+        <p>Next keywords is <code>style</code>, style is used on console write, used to change color, outline, font, or anything, its like <code style="color: blue;">C##</code> but scriptlang version</p>
+
+        <br>
+
+        <p>to use style, you can example use this:</p>
+
+        <pre><code class="language-js">console.write("red and white outline" style=[text-color: red,  outline-size: 10px, outline-color: white]</code></pre>
+
+        <p>And if you want the text to be italic or bold, use <code>text-style: italic, bold,</code></p>
+
+        <br>
+
+        <p>and if you want more style's, read this:</p>
+
+        <pre><code class="language-js">style=[
+ text-size: 10px, // to change text or font size
+ text-position: x, y, // change x and y to number of your text position
+ text-background-size: 10px, // size of your text background
+ text-background-color: red, // color of your text background
+ text-font: arial-sans // font of your text         
+]</code></pre>
+
         <br><hr>
 
-        <p class="left: 50%; text-align: center;">More docs coming soon!</p>
+        <p style="left: 50%; text-align: center;">Documents</p>
+        <div style="display: flex; justify-content: center;">
+            <a href="docs-page2.html">Page 2 (next page)</a>
+        </div>
     </div>
 
     <!-- 2. Main js and prism -->
